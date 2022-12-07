@@ -1,3 +1,3 @@
 mode: set
-goComTestes/ola.go:5.13,7.2 1 0
-goComTestes/ola.go:9.19,11.2 1 1
+goComTestes/ola/ola.go:5.13,7.2 1 0
+goComTestes/ola/ola.go:9.19,11.2 1 1
