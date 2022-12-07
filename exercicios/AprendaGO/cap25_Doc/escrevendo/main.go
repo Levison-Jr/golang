@@ -10,7 +10,7 @@ func Doc() {
 	fmt.Println("Faz nada, só testando...")
 }
 
-// doc2 nem vai ser vista fora do package
+// doc2 nem vai ser vista fora do package pois inicia com letra minuscula
 func doc2() {
 	fmt.Println("Faz nada, só testando...")
 }
