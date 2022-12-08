@@ -7,15 +7,24 @@ func main() {
 }
 
 const espanhol = "espanhol"
+const frances = "francês"
 const prefixoOlaPortugues = "Olá, "
-const prefixoHolaEspanhol = "Hola, "
+const prefixoOlaEspanhol = "Hola, "
+const prefixoOlaFrances = "Bonjour, "
 
 func Ola(nome, idioma string) string {
 	if nome == "" {
 		nome = "Mundo"
 	}
-	if idioma == espanhol {
-		return prefixoHolaEspanhol + nome
+
+	prefixo := prefixoOlaPortugues
+
+	switch idioma {
+	case espanhol:
+		prefixo = prefixoOlaEspanhol
+	case frances:
+		prefixo = prefixoOlaFrances
 	}
-	return prefixoOlaPortugues + nome
+
+	return prefixo + nome
 }
