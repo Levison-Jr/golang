@@ -6,11 +6,15 @@ func main() {
 	fmt.Println(Ola("mundo", ""))
 }
 
-const espanhol = "espanhol"
-const frances = "francês"
-const prefixoOlaPortugues = "Olá, "
-const prefixoOlaEspanhol = "Hola, "
-const prefixoOlaFrances = "Bonjour, "
+const (
+	espanhol            = "espanhol"
+	frances             = "francês"
+	ingles              = "inglês"
+	prefixoOlaPortugues = "Olá, "
+	prefixoOlaEspanhol  = "Hola, "
+	prefixoOlaFrances   = "Bonjour, "
+	prefixoOlaIngles    = "Hello, "
+)
 
 func Ola(nome, idioma string) string {
 	if nome == "" {
@@ -24,6 +28,8 @@ func Ola(nome, idioma string) string {
 		prefixo = prefixoOlaEspanhol
 	case frances:
 		prefixo = prefixoOlaFrances
+	case ingles:
+		prefixo = prefixoOlaIngles
 	}
 
 	return prefixo + nome
