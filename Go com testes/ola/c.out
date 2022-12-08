@@ -1,8 +1,11 @@
 mode: set
 goComTestes/ola/ola.go:5.13,7.2 1 0
-goComTestes/ola/ola.go:15.38,16.16 1 1
-goComTestes/ola/ola.go:20.2,22.16 2 1
-goComTestes/ola/ola.go:29.2,29.23 1 1
-goComTestes/ola/ola.go:16.16,18.3 1 1
-goComTestes/ola/ola.go:23.16,24.31 1 1
-goComTestes/ola/ola.go:25.15,26.30 1 1
+goComTestes/ola/ola.go:19.38,20.16 1 1
+goComTestes/ola/ola.go:24.2,24.41 1 1
+goComTestes/ola/ola.go:20.16,22.3 1 1
+goComTestes/ola/ola.go:27.56,28.16 1 1
+goComTestes/ola/ola.go:38.2,38.8 1 1
+goComTestes/ola/ola.go:29.16,30.31 1 1
+goComTestes/ola/ola.go:31.15,32.30 1 1
+goComTestes/ola/ola.go:33.14,34.29 1 1
+goComTestes/ola/ola.go:35.10,36.32 1 1
