@@ -6,6 +6,11 @@ func main() {
 	fmt.Println(Ola("mundo"))
 }
 
+const prefixoOlaPortugues = "Olá, "
+
 func Ola(nome string) string {
-	return "Olá, " + nome
+	if nome == "" {
+		nome = "Mundo"
+	}
+	return prefixoOlaPortugues + nome
 }
