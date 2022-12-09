@@ -17,3 +17,17 @@ func SomaAll(numerosParaSoma ...[]int) []int {
 
 	return total
 }
+
+func SomaTodoOResto(numeros ...[]int) []int {
+	var total []int
+	for _, value := range numeros {
+		if len(value) == 0 {
+			total = append(total, 0)
+		} else {
+			final := value[1:]
+			total = append(total, Soma(final))
+		}
+	}
+
+	return total
+}

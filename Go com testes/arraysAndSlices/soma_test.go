@@ -26,3 +26,26 @@ func TestSomaAll(t *testing.T) {
 		t.Errorf("resultado: %d, esperado: %d", resultado, esperado)
 	}
 }
+
+func TestSomaTodoOResto(t *testing.T) {
+
+	checarResultado := func(t *testing.T, resultado, esperado []int) {
+		t.Helper()
+		if !reflect.DeepEqual(resultado, esperado) {
+			t.Errorf("resultado: %d, esperado: %d", resultado, esperado)
+		}
+	}
+
+	t.Run("soma numeros de cada slice passado", func(t *testing.T) {
+		resultado := SomaTodoOResto([]int{1, 2}, []int{0, 9})
+		esperado := []int{2, 9}
+		checarResultado(t, resultado, esperado)
+	})
+
+	t.Run("trata um slice vazio seguramente", func(t *testing.T) {
+		resultado := SomaTodoOResto([]int{}, []int{3, 4, 5})
+		esperado := []int{0, 9}
+		checarResultado(t, resultado, esperado)
+	})
+
+}
