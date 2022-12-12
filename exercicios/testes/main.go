@@ -1,36 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
 	var (
-		notas        []float64 = make([]float64, 0, 2)
-		valor, media float64
-		novo         int
+		X, Y int
+		soma int = 0
 	)
 
-	for {
-		for len(notas) < 2 {
-			fmt.Scan(&valor)
-			if valor >= 0 && valor <= 10 {
-				notas = append(notas, valor)
-			} else {
-				fmt.Println("nota invalida")
-			}
-		}
+	fmt.Scanln(&X, &Y)
+	input := []int{X, Y}
+	sort.Ints(input)
 
-		media = (notas[0] + notas[1]) / 2
-		fmt.Printf("media = %.2f\n", media)
-		for {
-			fmt.Println("novo calculo (1-sim 2-nao)")
-			fmt.Scan(&novo)
-			if novo == 1 || novo == 2 {
-				notas = make([]float64, 0, 2)
-				break
-			}
-		}
-		if novo == 2 {
-			break
+	for i := input[0]; i <= input[1]; i++ {
+		if i%13 != 0 {
+			soma += i
 		}
 	}
+	fmt.Printf("%d\n", soma)
 }
