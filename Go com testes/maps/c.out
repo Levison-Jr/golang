@@ -1,0 +1,16 @@
+mode: set
+goComTestes/maps/dictionary.go:13.39,15.2 1 0
+goComTestes/maps/dictionary.go:17.57,20.9 2 1
+goComTestes/maps/dictionary.go:24.2,24.24 1 1
+goComTestes/maps/dictionary.go:20.9,22.3 1 1
+goComTestes/maps/dictionary.go:27.56,30.13 2 1
+goComTestes/maps/dictionary.go:39.2,39.12 1 1
+goComTestes/maps/dictionary.go:31.19,32.23 1 1
+goComTestes/maps/dictionary.go:33.11,34.23 1 1
+goComTestes/maps/dictionary.go:35.10,36.13 1 0
+goComTestes/maps/dictionary.go:42.62,45.13 2 1
+goComTestes/maps/dictionary.go:54.2,54.12 1 1
+goComTestes/maps/dictionary.go:46.19,47.29 1 1
+goComTestes/maps/dictionary.go:48.11,49.26 1 1
+goComTestes/maps/dictionary.go:50.10,51.13 1 0
+goComTestes/maps/dictionary.go:57.41,59.2 1 1
