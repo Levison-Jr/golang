@@ -2,23 +2,29 @@ package main
 
 import (
 	"fmt"
-	"sort"
 )
 
 func main() {
 	var (
-		X, Y int
-		soma int = 0
+		opt, alcool, gasolina, diesel int
 	)
 
-	fmt.Scanln(&X, &Y)
-	input := []int{X, Y}
-	sort.Ints(input)
-
-	for i := input[0]; i <= input[1]; i++ {
-		if i%13 != 0 {
-			soma += i
+	for {
+		fmt.Scan(&opt)
+		if opt == 4 {
+			break
+		}
+		switch opt {
+		case 1:
+			alcool++
+		case 2:
+			gasolina++
+		case 3:
+			diesel++
 		}
 	}
-	fmt.Printf("%d\n", soma)
+	fmt.Println("MUITO OBRIGADO")
+	fmt.Printf("Alcool: %d\n", alcool)
+	fmt.Printf("Gasolina: %d\n", gasolina)
+	fmt.Printf("Diesel: %d\n", diesel)
 }
